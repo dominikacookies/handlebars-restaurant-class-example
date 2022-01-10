@@ -1,0 +1,12 @@
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.image-container {
+  width: 100vw;
+}
+
+.img {
+  object-fit: cover;
+}
