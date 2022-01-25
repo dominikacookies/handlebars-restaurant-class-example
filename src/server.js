@@ -3,14 +3,13 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const handlebars = require("express-handlebars");
-const helpers = require("./helpers");
 
 const routes = require("./routes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const handlebarsOptions = { helpers };
+const handlebarsOptions = {};
 const hbs = handlebars.create(handlebarsOptions);
 
 app.engine("handlebars", hbs.engine);
