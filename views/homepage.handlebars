@@ -1,0 +1,14 @@
+<main class="center">
+  <h1>The Restaurant</h1>
+  <h2>A peek of our menu...</h2>
+  <section class="d-flex justify-content-center mx-auto image-container mb-3">
+    {{#each dishes }}
+      {{> dishCard}}
+    {{/each }}
+  </section>
+  {{#if loggedIn}}
+    <button type="button" class="btn btn-primary">Order now</button>
+  {{else}}
+    <button type="button" class="btn btn-primary">Log in to order</button>
+  {{/if}}
+</main>
